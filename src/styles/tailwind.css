@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bordered {
+    border: 1px dashed #ffffff;
+    padding: 0.9em 0.7em;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    flex: none;
+}
+
+.bordered-l {
+    border-top: 1px dashed #ffffff;
+    border-bottom: 1px dashed #ffffff;
+    border-left: 1px dashed #ffffff;
+    padding: 0.9em 0.7em;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    flex: none;
+}
+
+.bordered-r {
+    border-top: 1px dashed #ffffff;
+    border-bottom: 1px dashed #ffffff;
+    border-right: 1px dashed #ffffff;
+    padding: 0.9em 0.7em;
+    margin-bottom: -1px;
+    margin-left: 0px;
+    flex: none;
+}
+
+.bordered-sm {
+    border: 1px dashed #ffffff;
+    padding: 0.9em 0.7em;
+    margin-bottom: -1px;
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.h-min-600 {
+    max-height: 600px;
+}
+
+.glassmorph {
+    background: rgba(49, 1, 1, 0.7);
+    background-image: linear-gradient(rgb(255, 0, 0, 0.7), rgb(255, 255, 0, 0.7));
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+
+.bungee {
+    font-family: 'Bungee', cursive;
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+}
+
+.consolas {
+    font-family: 'Consolas';
+}
+
+.group:hover>div {
+    background-color: rgb(120, 113, 212, 0.5);
+}
