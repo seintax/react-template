@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useClientContext } from "../contexts/client.context"
+import Notification from "../features/notification"
 
 const HomePage = () => {
+    const [notify, setnotify] = useState(false)
+    const { showPopper } = useClientContext()
+    const pagetitle = "Syntax Template"
+
     return (
         <div className="w-[100vw] h-[100vh] bg-gradient-to-r from-[#079ec4ff] to-[#0654fdff] text-[20px] text-white flex justify-center items-center isolate relative">
             <div className="w-[300px] h-[300px] bg-[#0f32cc] opacity-50 origin-center rotate-[80deg] z-[-1] absolute"></div>
@@ -13,6 +19,11 @@ const HomePage = () => {
                 <div className="text-[#8797f0]">HOMEPAGE</div>
                 <div className="bg-[#000000] w-[80px] h-[15px] rounded-[50%] z-[-1] opacity-[15%] mt-[10px] shadow shadow-[#040552]"></div>
             </div>
+            <div className="bottom-[80px] absolute">
+                <div className="px-[20px] py-[10px] bg-[#219aeb] hover:bg-[#0e8bdf] cursor-pointer" onClick={() => setnotify(true)}>View Topics</div>
+                <div className="px-[20px] py-[10px] bg-[#219aeb] hover:bg-[#0e8bdf] cursor-pointer mt-[20px] flex justify-center" onClick={() => showPopper(`Welcome to the ${pagetitle}`, 2000)}>Click Me!</div>
+            </div>
+            <Notification show={notify} setshow={setnotify} />
         </div>
     )
 }
