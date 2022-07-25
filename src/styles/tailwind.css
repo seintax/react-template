@@ -71,3 +71,16 @@
 .group:hover>div {
     background-color: rgb(120, 113, 212, 0.5);
 }
+
+.neubrutalism {
+    border: 3px solid black;
+    box-shadow: 5px 5px black;
+    transform: rotate(-5deg);
+    outline: none;
+}
+
+.neubrutalism-plain {
+    border: 3px solid black;
+    box-shadow: 5px 5px black;
+    outline: none;
+}
