@@ -16,7 +16,7 @@ export function ClientProvider({ children }) {
     const [theme, settheme] = useState()
     const [user, setuser] = useState()
     const [config, setconfig] = useState({
-        topic: "This a easy template",
+        topic: "This an easy template",
         search: "",
     })
 
@@ -31,11 +31,6 @@ export function ClientProvider({ children }) {
     const changeTopic = (topic) => {
         setconfig({...config, topic: topic})
     }
-
-    useEffect(() => {
-        console.log(config)
-    }, [config])
-
 
     return (
         <ClientContext.Provider value={{ config, changeTopic, theme, settheme, user, setuser, showPopper }} >

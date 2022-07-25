@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react'
 import { FaWindowClose, FaTrash } from 'react-icons/fa'
 import { useClientContext } from "../contexts/client.context"
 
-const Notification = ({ show, setshow }) => {
+const Topic = ({ show, setshow }) => {
     const { config, changeTopic } = useClientContext()
     const [topic, settopic] = useState("")
 
@@ -52,4 +52,4 @@ const Notification = ({ show, setshow }) => {
     )
 }
 
-export default Notification
+export default Topic
