@@ -31,7 +31,7 @@ const Topic = ({ show, setshow }) => {
     return (
         (show && (
             <div className="w-screen h-screen bg-[#000000] text-[#000000] bg-opacity-40 flex justify-center items-center absolute top-0 left-0 z-10">
-                <div className="w-[400px] h-[500px] bg-[#d3d3d3] flex flex-col rounded-[10px] pb-[20px]">
+                <div className="w-[500px] h-[600px] bg-[#d3d3d3] flex flex-col rounded-[10px] pb-[20px]">
                     <div className="w-full p-[10px] flex justify-between">
                         <div className="no-select">Topics</div>
                         <div className="text-[18px] text-[#fa0606]" onClick={() => setshow(false)}>
