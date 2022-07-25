@@ -5,7 +5,9 @@ const Topics = () => {
     const { config } = useClientContext()
     return (
         <div className="w-full h-full flex justify-center items-center text-white text-[50px]">
-            &#10077; {config.topic} &#10078;
+            <div className="p-[20px] neubrutalism-static">
+                &#10077; {config.topic} &#10078;
+            </div>
         </div>
     )
 }

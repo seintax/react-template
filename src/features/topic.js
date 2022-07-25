@@ -31,9 +31,9 @@ const Topic = ({ show, setshow }) => {
     return (
         (show && (
             <div className="w-screen h-screen bg-[#000000] text-[#000000] bg-opacity-40 flex justify-center items-center absolute top-0 left-0 z-10">
-                <div className="w-[500px] h-[600px] bg-[#d3d3d3] flex flex-col rounded-[10px] pb-[20px]">
+                <div className="w-[500px] h-[600px] bg-[#03dbf7] flex flex-col pb-[20px] neubrutalism-static">
                     <div className="w-full p-[10px] flex justify-between">
-                        <div className="no-select">Topics</div>
+                        <div className="no-select neubrutalism-skewed px-[10px] text-[18px] font-bold">TOPIC</div>
                         <div className="text-[18px] text-[#fa0606]" onClick={() => setshow(false)}>
                             <FaWindowClose className="cursor-pointer" />
                         </div>
@@ -41,9 +41,9 @@ const Topic = ({ show, setshow }) => {
                     <form  onSubmit={updateTopic} className="p-[10px] overflow-auto flex flex-col items-center">
                         <div className="text-[15px]">&#10077; {config.topic} &#10078;</div>
                         <div className="w-full mt-[100px] px-[20px] text-[14px] flex flex-col">
-                            <label htmlFor="">New Topic:</label>
-                            <input type="text" value={topic} onChange={topicChange} className="p-[10px] w-full text-center mt-[5px]" required />
-                            <input type="submit" value="Change Topic" className="mt-[10px] bg-[#115bfc] p-[10px] text-[#ffffff] cursor-pointer" />
+                            <span className="w-[100px] neubrutalism-skewed ml-[-10px] text-center">New Topic</span>
+                            <input type="text" value={topic} onChange={topicChange} className="p-[10px] w-full text-center neubrutalism-static" required />
+                            <input type="submit" value="Change Topic" className="mt-[10px] bg-[#115bfc] hover:bg-[#084de0] p-[10px] text-[#ffffff] cursor-pointer neubrutalism-static" />
                         </div>
                     </form>
                 </div>
