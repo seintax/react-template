@@ -5,7 +5,7 @@ import Header from "../header/header"
 const HomePage = () => {
 
     return (
-        <div className="w-[100%] h-[100%] bg-gradient-to-r from-[#079ec4ff] to-[#0654fdff] relative overflow-hidden">
+        <div className="w-[100%] h-[100%] bg-gradient-to-r from-[#3489f8] to-[#0654fd] relative overflow-hidden">
             <Header />
             <Outlet />
         </div>

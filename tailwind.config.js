@@ -28,7 +28,9 @@ module.exports = {
                 }
             },
             animation: {
-                'fade-in-left': 'fade-in-left 0.7s ease-out'
+                'fade-in-left': 'fade-in-left 0.7s ease-out',
+                'spin-slow': 'spin 10s linear infinite',
+                'spin-slower': 'spin 9s linear infinite',
             }
         },
     },

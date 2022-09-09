@@ -41,7 +41,7 @@ const Topic = ({ show, setshow }) => {
                     <form  onSubmit={updateTopic} className="p-[10px] overflow-auto flex flex-col items-center">
                         <div className="text-[15px]">&#10077; {config.topic} &#10078;</div>
                         <div className="w-full mt-[100px] px-[20px] text-[14px] flex flex-col">
-                            <span className="w-[100px] neubrutalism-skewed ml-[-10px] text-center">New Topic</span>
+                            <span className="w-[100px] neubrutalism-skewed ml-[-10px] text-center">NEW TOPIC</span>
                             <input type="text" value={topic} onChange={topicChange} className="p-[10px] w-full text-center neubrutalism-static" required />
                             <input type="submit" value="Change Topic" className="mt-[10px] bg-[#115bfc] hover:bg-[#084de0] p-[10px] text-[#ffffff] cursor-pointer neubrutalism-static" />
                         </div>
